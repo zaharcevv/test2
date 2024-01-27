@@ -1,0 +1,140 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; /* Set width to 100% */
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    width: 70%; /* Adjust the width as needed */
+}
+.search-container input {
+    width: 100%; /* Set input width to 100% */
+    height: 30px;
+}
+#searchDropdown {
+    display: none;
+    position: absolute;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 50%; /* Adjust the percentage as needed */
+}
+#searchDropdown div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchDropdown div:hover {
+    background-color: #f2f2f2;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.picture img {
+    height: 400px;
+    width: auto;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.leafs {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.leafs img {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.sections {
+    margin-top: 50px;
+}
+
+.read-more-section {
+    margin-top: 0px;
+    text-align: center;
+    background-color: ;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.read-more-section:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.read-more-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.read-more-header h2{
+    font-size:20px;
+}
+
+.read-more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(255,255,255, 0.3);
+    border-radius: 10px;
+}
+
+.read-more-section.open .read-more-content {
+    max-height: 300px;
+}
+
+.read-more-toggle {
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.read-more-toggle span {
+    font-size: 20px;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-out;
+}
+
+.read-more-section.open .read-more-toggle span {
+    transform: rotate(180deg);
+}

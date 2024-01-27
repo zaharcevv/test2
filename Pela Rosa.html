@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Pela Rosa</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png">
+    </div>
+    <div class="search">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..." oninput="search()">
+            <div id="searchDropdown" class="search-dropdown"></div>
+        </div>
+    </div>
+    <div class="score">
+        <p>Оverall grade: </p>
+        <div class="leafs">
+            <img src="greenleaf.png">
+            <img src="greenleaf.png">
+            <img src="greenleaf.png">
+            <img src="greenleaf.png">
+            <img src="leaf.png">
+        </div>
+    </div>
+    <div class="picture">
+        <img src="Pela Rosa.png">
+    </div>
+
+    <div class="sections">
+        
+    <div class="read-more-section" id="materialSection">
+        <div class="read-more-header">
+            <h2>Material</h2>
+            <div class="read-more-toggle" onclick="toggleReadMore('materialSection')">
+                <span>&#9660;</span> <!-- Downward arrow character -->
+            </div>
+            <div class="leafs">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="leaf.png">
+            </div>
+        </div>
+        <div class="read-more-content">
+            <p>
+                The Material section grade within the KnowYourPlastic certification serves as an evaluation of the environmental sustainability and composition of the plastic material utilized in the production of bottles or related plastic products. This grading system scrutinizes factors such as recyclability, biodegradability, and overall environmental impact of the plastic material. Essentially, the Material section grade acts as a barometer for assessing the responsible sourcing and utilization of plastic material, aiming to incentivize environmentally conscious practices within the industry.
+                Considered a good level of environmental sustainability, grade 4 indicates that the plastic material meets higher standards for recyclability, biodegradability, and reduced environmental impact. Products graded at this level demonstrate responsible sourcing and manufacturing practices, contributing to efforts in minimizing plastic pollution and promoting sustainability.
+            </p>
+        </div>
+    </div>
+
+    <div class="read-more-section" id="socialSection">
+        <div class="read-more-header">
+            <h2>Social Engagement</h2>
+            <div class="read-more-toggle" onclick="toggleReadMore('socialSection')">
+                <span>&#9660;</span> 
+            </div>
+            <div class="leafs">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="leaf.png">
+            </div>
+        </div>
+        <div class="read-more-content">
+            <p>
+                Social Engagement within the KnowYourPlastic certification assesses the extent to which a company engages in socially responsible practices, including factors such as labor practices, community involvement, and ethical considerations throughout the supply chain.
+                Considered a good level of social engagement, grade 4 indicates that the company actively engages in socially responsible practices. This may include fair labor practices, community development projects, and transparent supply chain management, contributing positively to social welfare and ethical standards.
+            </p>
+        </div>
+    </div>
+
+    <div class="read-more-section" id="recycleSection">
+        <div class="read-more-header">
+            <h2>Recyclability</h2>
+            <div class="read-more-toggle" onclick="toggleReadMore('recycleSection')">
+                <span>&#9660;</span> <!-- Downward arrow character -->
+            </div>
+            <div class="leafs">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="leaf.png">
+            </div>
+        </div>
+        <div class="read-more-content">
+            <p>
+                Recyclability within the KnowYourPlastic certification evaluates the ease and effectiveness of recycling the plastic material used in bottles or related plastic products, considering factors such as material composition, recycling infrastructure, and end-of-life disposal options.
+                Considered a good level of recyclability, grade 4 indicates that the plastic material is readily recyclable and can be efficiently processed through existing recycling systems. Products at this level contribute positively to recycling efforts and environmental sustainability.
+            </p>
+        </div>
+    </div>
+
+    <div class="read-more-section" id="co2Section">
+        <div class="read-more-header">
+            <h2>Carbon Emissions</h2>
+            <div class="read-more-toggle" onclick="toggleReadMore('co2Section')">
+                <span>&#9660;</span> <!-- Downward arrow character -->
+            </div>
+            <div class="leafs">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="leaf.png">
+            </div>
+        </div>
+        <div class="read-more-content">
+            <p>
+                Carbon Emissions within the KnowYourPlastic certification evaluates the amount of greenhouse gas emissions produced during the production and transportation processes of plastic products, considering factors such as energy usage, manufacturing methods, and transportation logistics.
+                Considered a good level of carbon emissions management, grade 4 indicates that companies have implemented effective strategies to minimize emissions during production and transportation. Products at this level demonstrate responsible environmental stewardship and contribute positively to efforts in reducing greenhouse gas emissions.
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

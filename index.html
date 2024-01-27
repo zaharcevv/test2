@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Evian Bottle</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png">
+    </div>
+    <div class="search">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..." oninput="search()">
+            <div id="searchDropdown" class="search-dropdown"></div>
+        </div>
+    </div>
+    <div class="score">
+        <p>Оverall grade: </p>
+        <div class="leafs">
+            <img src="greenleaf.png">
+            <img src="greenleaf.png">
+            <img src="greenleaf.png">
+            <img src="greenleaf.png">
+            <img src="leaf.png">
+        </div>
+    </div>
+    <div class="picture">
+        <img src="evian.png">
+    </div>
+
+    <div class="sections">
+        
+    <div class="read-more-section" id="materialSection">
+        <div class="read-more-header">
+            <h2>Material</h2>
+            <div class="read-more-toggle" onclick="toggleReadMore('materialSection')">
+                <span>&#9660;</span> <!-- Downward arrow character -->
+            </div>
+            <div class="leafs">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="leaf.png">
+            </div>
+        </div>
+        <div class="read-more-content">
+            <p>
+                The "Material" standard, in the context of the KnowYourPlastic certification, assesses the environmental sustainability and composition of the plastic material used in the production of bottles. A grade of 4 indicates that the material used meets high standards of sustainability, recyclability, and has a minimal environmental impact.
+                A grade of 4 for the "Material" standard indicates that the plastic material used in Evian's water bottles meets high environmental sustainability standards. This suggests commendable features such as recyclability, potential use of renewable materials, and a relatively low environmental impact during production. The bottle demonstrates a strong commitment to environmentally friendly practices, with minor room for improvement.
+            </p>
+        </div>
+    </div>
+
+    <div class="read-more-section" id="socialSection">
+        <div class="read-more-header">
+            <h2>Social Engagement</h2>
+            <div class="read-more-toggle" onclick="toggleReadMore('socialSection')">
+                <span>&#9660;</span> 
+            </div>
+            <div class="leafs">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="leaf.png">
+                <img src="leaf.png">
+            </div>
+        </div>
+        <div class="read-more-content">
+            <p>
+                The "Social Engagement" standard within the KnowYourPlastic certification evaluates a company's commitment to social responsibility across its operations. This includes factors such as community impact, labor practices, diversity and inclusion, supply chain ethics, and transparency.
+                . A grade of 3 for Evian suggests that while there are efforts in social responsibility, there's room for improvement in areas such as community engagement, workplace practices, and ethical sourcing. It signifies a foundational level of social engagement with identified opportunities for enhancement in Evian's social responsibility practices.
+            </p>
+        </div>
+    </div>
+
+    <div class="read-more-section" id="recycleSection">
+        <div class="read-more-header">
+            <h2>Recyclability</h2>
+            <div class="read-more-toggle" onclick="toggleReadMore('recycleSection')">
+                <span>&#9660;</span> <!-- Downward arrow character -->
+            </div>
+            <div class="leafs">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="leaf.png">
+            </div>
+        </div>
+        <div class="read-more-content">
+            <p>
+               
+The "Recyclability" standard in the KnowYourPlastic certification focuses on assessing how easily and effectively the plastic material used in a product can be recycled. A grade of 4 would indicate that the plastic material employed in Evian's bottles is highly recyclable, supporting the principles of a circular economy. This grade suggests that the material is designed for efficient recycling processes, contributing to environmental sustainability by reducing waste and promoting the reuse of resources.
+            </p>
+        </div>
+    </div>
+
+    <div class="read-more-section" id="co2Section">
+        <div class="read-more-header">
+            <h2>Carbon Emissions</h2>
+            <div class="read-more-toggle" onclick="toggleReadMore('co2Section')">
+                <span>&#9660;</span> <!-- Downward arrow character -->
+            </div>
+            <div class="leafs">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+                <img src="greenleaf.png">
+            </div>
+        </div>
+        <div class="read-more-content">
+            <p>
+                The "Carbon Emissions" standard in the KnowYourPlastic certification evaluates a company's efforts to minimize carbon emissions associated with its production processes and supply chain. A grade of 5 for Evian signifies an exceptional commitment to environmental sustainability, demonstrating advanced and innovative practices to significantly reduce its carbon footprint. This top rating indicates that Evian excels in implementing comprehensive strategies to address and mitigate the impact of carbon emissions throughout the product lifecycle. Evian's achievement of a grade 5 reflects its leadership role in fostering a low-carbon and environmentally responsible plastic production model.
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
